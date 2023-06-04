@@ -29,7 +29,7 @@ interface IGlobalDataProvider {
 
 export const GlobalDataProvider: FC<IGlobalDataProvider> = ({ children }) => {
   const [listInfoAddress, setListInfoAddress] = useState<InfoWallet[]>([]);
-  const [isLoading, setIsLoading] = useState<boolean>(false);
+  const [isLoading, setIsLoading] = useState<boolean>(true);
 
   useEffect(() => {
     getInfoWallets();
