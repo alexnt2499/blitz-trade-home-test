@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { Wallets } from "@/configs";
 import { TokenABI, Tokens } from "@/configs";
 import { InfoWallet } from "@/interfaces/InfoWallet";

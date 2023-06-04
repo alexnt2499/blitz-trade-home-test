@@ -4,6 +4,7 @@ import { exportFileName } from "@/configs";
 import { useGlobalData } from "@/context/GlobalDataContext";
 import { formatExportData } from "@/utils/formatExportData";
 import { DocumentArrowDownIcon } from "@heroicons/react/24/outline";
+import Head from "next/head";
 import { CSVLink } from "react-csv";
 
 export default function Home() {
@@ -11,9 +12,9 @@ export default function Home() {
 
   return (
     <>
-      <head>
+      <Head>
         <title>Wallets checking</title>
-      </head>
+      </Head>
       <main className="flex flex-col items-center justify-start p-16">
         <h1 className="text-4xl font-mono">Wallets checking</h1>
         <div className="mt-6 w-full max-w-3xl flex justify-end">
